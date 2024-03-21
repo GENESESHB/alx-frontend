@@ -1,5 +1,5 @@
 # 0x01.Developer tools
-CTYPE html>
+<DOCTYPE html>
 <!-- saved from url=(0041)https://intranet.alxswe.com/projects/1192 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
