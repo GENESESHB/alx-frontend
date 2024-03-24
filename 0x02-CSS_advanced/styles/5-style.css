@@ -1,32 +1,5 @@
-html {
-    scroll-behavior: smooth;
-}
+/* add variables for fonts size*/
 
-/* Set foreground color value to #161616 for the body */
-body {
-    color: #161616;
-}
-
-/* Set foreground color value to #161616 for all anchor elements */
-a {
-    color: #161616;
-}
-
-/* Set display to none for all elements with class visually-hidden */
-.visually-hidden {
-    display: none;
-}
-
-/* Set foreground color value to #D73953 for all elements with class card-category */
-.card-category {
-    color: #D73953;
-}
-
-/* Set foreground color value to #D73953 for all elements with class section-tagline */
-.section-tagline {
-    color: #D73953;
-}
-/* Define custom properties */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -34,49 +7,44 @@ a {
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
+
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
 }
 
-/* Reset color for section-tagline and card-category to color-primary */
-.section-tagline,
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+a {
+    color: var(--text-color);
+}
+
+.visually-hidden {
+    display: none;
+}
+
 .card-category {
     color: var(--color-primary);
 }
 
-/* Reset color for body and anchor to text-color */
-body,
-a {
-    color: var(--text-color);
+.section-tagline {
+    color: var(--color-primary);
 }
-:root {
-  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-body {
-  font-family: var(--font-family-base);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-title);
-}
-
-/* styles/6-style.css */
-
-:root {
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-}
-
-body {
-  font-weight: var(--font-weight-regular);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-bold);
-}
-
